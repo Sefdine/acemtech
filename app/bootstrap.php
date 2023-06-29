@@ -5,7 +5,6 @@ require_once    'helpers/session_helper.php';
 require_once    'helpers/general_helper.php';
 require_once    'helpers/upload_image.php';
 
-
 // Load PHPMailer 
 require 'librairies/PHPMailer/src/PHPMailer.php';
 require 'librairies/PHPMailer/src/SMTP.php';
@@ -18,4 +17,3 @@ class Autoloader {
     	require_once 'librairies/' . $className . '.php';
     }
 }
-

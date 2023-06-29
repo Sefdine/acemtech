@@ -181,7 +181,7 @@ $("#countdown").countdown(
 
   function () {
     // This will run when the countdown ends
-    alert("Evènement termine, Merci à tous! IT was great!");
+    // alert("Evènement termine, Merci à tous! IT was great!");
   }
 );
 

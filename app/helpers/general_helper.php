@@ -64,9 +64,9 @@ function colors_category($category_name) {
 
 // OG description display
 function og_desc_display() {
-	if (!empty($data[post])) { 
+	if (!empty($data['post'])) { 
       
-      echo limit_text($data[post]->body, 28); 
+      echo limit_text($data['post']->body, 28); 
     
     } else { 
       

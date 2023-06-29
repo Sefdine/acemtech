@@ -32,22 +32,16 @@
           </div>
         </div>
       </footer>
-	  <!-- Load Facebook SDK for JavaScript -->
-      <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.0";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
 
-     
-     <?php if($view == 'posts/ajouterarticle' || $view == 'posts/editer') : ?>
-      <script src="<?php echo URLROOT; ?>/public/js/ckeditor/ckeditor.js"></script>                             <script src="<?php echo URLROOT; ?>/public/js/script.js"></script>
-      <script>
-          CKEDITOR.replace( 'editor1' );
-      </script>
-        <?php endif; ?>
+      <!-- Load custom scripts -->
+      <script src="<?php echo URLROOT; ?>/public/js/script.js"></script>
+      <?php if($view == 'posts/ajouterarticle' || $view == 'posts/editer') : ?>
+        <script src="<?php echo URLROOT; ?>/public/js/ckeditor/ckeditor.js"></script>
+        <script src="<?php echo URLROOT; ?>/public/js/script.js"></script>                        <script src="<?php echo URLROOT; ?>/public/js/script.js"></script>
+        <script>
+            CKEDITOR.replace( 'editor1' );
+        </script>
+      <?php endif; ?>
 	  
   </body>
   </html>

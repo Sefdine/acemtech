@@ -1168,61 +1168,117 @@ h4.fonction {
   height: 100%;
 }
 
-#contact h1.m-heading {
-  margin: 10px 0 0 2rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: left;
+#contact .m-heading {
+  text-align: center;
+  margin: auto;
+  font-size: 2.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.red-star {
+  color: red;
 }
 
 @media (max-width: 768px) {
   #palace {
     display: none;
   }
+  #contact .m-heading {
+    font-size: 2.9rem;
+  }
+  #contact .form-group label {
+    font-size: 0.9em;
+  }
+  #contact .div-contact {
+    background-color: #333 !important;
+  }
 }
 
-#contact form {
+@media (max-width: 1290px) {
+  #contact .m-heading {
+    font-size: 2.9rem;
+  }
+  #contact .form-group label {
+    font-size: 0.9em;
+  }
+}
+
+#contact .div-contact {
   flex: 1;
-  background: #66d37e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #fafafa;
 }
 
-#contact form .form-group {
-  margin: 2rem;
+#contact .form-contact {
+  padding: 50px 20px;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #66d37e;
 }
 
-#contact form .form-group label {
+#contact .form-group {
+  width: 90%;
+  margin: auto;
+}
+
+#contact .form-group label {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2em;
 }
 
-#contact form .form-group input {
-  width: 100%;
+#contact .form-group input[type="text"], input[type="email"], textarea {
   height: 3.5rem;
+  width: 90%;
+  margin-left: 40px;
+  margin-bottom: 30px;
   border: solid 1px #66d37e;
+  border-radius: 3px;
 }
 
-#contact form .form-group input:focus {
+#contact .form-group input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
   padding: 0 0.75rem;
-  border: solid 1px #00c4f3;
+  border: solid 2px #4271d4 !important;
+  transition: all 0.1s ease;
+}
+
+#contact .form-group input:focus {
+  padding: 0 0.75rem;
+  border: solid 2px #4271d4 !important;
 }
 
 #contact form .form-group textarea {
   padding: 0 0.75rem;
-  width: 100%;
   height: 250px;
   resize: none;
 }
 
-#contact form .form-group input[type="submit"] {
-  text-transform: uppercase;
-  background: #333;
-  color: #fff;
-  font-weight: 700;
-  transition: all 1s ease-in-out;
+#contact .form-submit {
+  width: max-content;
+  margin: auto;
 }
 
-#contact form .form-group input[type="submit"]:hover {
-  background: forestgreen;
+#contact .form-submit input {
+  padding: 15px 40px;
+  text-transform: uppercase;
+  background: linear-gradient(to top, #fff 50%, #4271d4 50%);
+  background-size: 100% 200%;
+  border: 2px solid #66d37e;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-position 0.3s ease;
+}
+
+#contact .form-submit input:hover {
+  background-position: 0% 100%;
+  color: #4271d4;
+  border-color: #4271d4;
 }
 
 #contact #palace {
